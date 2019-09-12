@@ -7,20 +7,19 @@ class Processor
   end  
 
   def process
-    json = {}
-    schema.each do |k, v|
-      json[k] = final_value(v)
+    {}.tap do |json|
+      schema.each do |k, v|
+        json[k] = find_value(v)
+      end
     end
-    json
   end
 
   private
 
   attr_reader :xml, :schema
 
-  def final_value(value)
-    raw_value = extract_raw_value(value)
-    apply_modifiers(raw_value, value[:modifiers])
+  def find_value(value)
+    extract_raw_value(value).then{ |it| apply_modifiers(it, value[:modifiers]) }    
   end
 
   def extract_raw_value(value)        

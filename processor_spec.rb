@@ -8,18 +8,21 @@ describe Processor do
       let(:xml) do
         <<~XML
         <xml>
-          <nome>fernando</nome>
+          <name>fernando</name>
+          <age>27</age>
         </xml>
         XML
       end
       let(:schema) do
         {
-          nome: { css: "nome", modifiers: [:capitalize] }
+          name: { css: "name", modifiers: [:capitalize] },
+          age: { css: "age", modifiers: [:to_i] }
         }
       end
       let(:json) do
         {
-          nome: "Fernando"          
+          name: "Fernando",
+          age: 27 
         }
       end
 
