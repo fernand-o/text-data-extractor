@@ -2,37 +2,49 @@ require 'nokogiri'
 
 class Processor  
   def initialize(xml, schema)
-    @xml = Nokogiri::XML(xml)
+    @xml = xml
     @schema = schema
+    @base_path = schema[:base_path]
   end  
 
-  def process
-    {}.tap do |json|
-      schema.each do |k, v|
-        json[k] = find_value(v)
-      end
-    end
+  def process    
+    {
+      products: [ hotels ].flatten.compact
+    }            
   end
 
   private
 
-  attr_reader :xml, :schema
+  attr_reader :xml, :schema, :base_path
 
-  def find_value(value)
-    extract_raw_value(value).then{ |it| apply_modifiers(it, value[:modifiers]) }    
+  def hotels
+    return unless schema[:hotel]
+
+    matcher = schema[:hotel][:matcher]    
+    size = node(matcher).size    
+
+    size.times.map do |i|      
+      hotel node(matcher)[0]
+    end    
   end
 
-  def extract_raw_value(value)        
-    return from_css(value[:css]) if value[:css]    
-
-    "not_found"
+  def hotel(raw)      
+    fields = schema[:hotel][:fields]    
+    {}.tap do |hash|      
+      fields.each do |field_name, props|
+        value = raw.xpath(props[:xpath]).text        
+        hash[field_name] = apply_modifiers(value, props[:modifiers])
+      end    
+    end    
   end
 
-  def from_css(css)        
-    xml.css(css).text
-  end
+  def node(path)
+    xml.xpath(base_path + path)
+  end    
 
   def apply_modifiers(value, modifiers)
+    return value unless modifiers
+
     modifiers.inject(value){ |final, m| final.send(m) }
   end
 end

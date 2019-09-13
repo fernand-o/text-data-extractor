@@ -1,0 +1,287 @@
+<XML>
+    <reservas>
+        <reserva>
+            <reserva_master>
+                <roteiro/>
+                <origem>RIO</origem>
+                <destino>JOI</destino>
+                <datade>2013-11-12</datade>
+                <dataate>2013-11-15</dataate>
+                <localizadorsat>567567</localizadorsat>
+                <codigofilial>0</codigofilial>
+                <codigoagencia>78945</codigoagencia>
+                <codigovendedor>4778</codigovendedor>
+                <codigovendedoragencia>19195</codigovendedoragencia>
+                <codigocliente>0</codigocliente>
+                <qtdepax>3</qtdepax>
+                <datalancamento>2013-08-14 14:08:20</datalancamento>
+                <nomepax1>HAVAN/TESTE</nomepax1>
+                <sexopax1/>
+                <datanascpax1>0000-00-00</datanascpax1>
+                <documentopax1>4670292</documentopax1>
+                <tipodocumentopax1>R</tipodocumentopax1>
+                <nomepax2/>
+                <sexopax2/>
+                <datanascpax2>0000-00-00</datanascpax2>
+                <documentopax2/>
+                <tipodocumentopax2/>
+                <nomepax3/>
+                <sexopax3/>
+                <datanascpax3>0000-00-00</datanascpax3>
+                <documentopax3/>
+                <tipodocumentopax3/>
+                <nomepax4/>
+                <sexopax4/>
+                <datanascpax4>0000-00-00</datanascpax4>
+                <documentopax4/>
+                <tipodocumentopax4/>
+                <nomechd1>HAVAN/TESTE HAVAN</nomechd1>
+                <sexochd1/>
+                <datanascchd1>0000-00-00</datanascchd1>
+                <idadeCHD1/>
+                <tipodocumentochd1/>
+                <documentochd1>8794565</documentochd1>
+                <nomechd2>TESTE/HAVAN TESTE</nomechd2>
+                <sexochd2/>
+                <datanascchd2>0000-00-00</datanascchd2>
+                <idadeCHD2/>
+                <tipodocumentochd2/>
+                <documentochd2>7895642</documentochd2>
+                <nomechd3/>
+                <sexochd3/>
+                <datanascchd3>0000-00-00</datanascchd3>
+                <idadeCHD3/>
+                <tipodocumentochd3/>
+                <documentochd3/>
+                <nomechd4/>
+                <sexochd4/>
+                <datanascchd4>0000-00-00</datanascchd4>
+                <idadeCHD4/>
+                <tipodocumentochd4/>
+                <documentochd4/>
+                <cancelado/>
+                <usucancelamento>0</usucancelamento>
+                <datacancelamento>0000-00-00 00:00:00</datacancelamento>
+                <recibo>0</recibo>
+                <codigousurecibo>0</codigousurecibo>
+                <motivocanc/>
+                <emitido/>
+                <observacoes/>
+                <mercado>I</mercado>
+                <dataprazopgtoagencia>0000-00-00 00:00:00</dataprazopgtoagencia>
+                <dataprazocldfree>0000-00-00 00:00:00</dataprazocldfree>
+                <numeroquarto>1.0</numeroquarto>
+            </reserva_master>
+            <reserva_aereo>
+                <dataPartida>12/11/2013</dataPartida>
+                <dataChegada>12/11/2013</dataChegada>
+                <horaPartida>15:45:00</horaPartida>
+                <horaChegada>16:35:00</horaChegada>
+                <codCia>G3</codCia>
+                <numVoo>3939 / 2225</numVoo>
+                <origem>SDU</origem>
+                <destino>CGH</destino>
+                <classe>Q</classe>
+                <tarifa>342.69</tarifa>
+                <tarifaChd>281.67</tarifaChd>
+                <taxaNe>38.52</taxaNe>
+                <moeda>R$</moeda>
+                <status>NN</status>
+                <dataQueda>2013-08-17 15:00:00</dataQueda>
+                <dataSys>2013-08-14 14:08:30</dataSys>
+                <localizador>2EG7NJ</localizador>
+                <taxa>38.52</taxa>
+                <qtdeadt>1</qtdeadt>
+                <qtdechd>2</qtdechd>
+                <qtdeinf>0</qtdeinf>
+                <numeroQuarto>1</numeroQuarto>
+            </reserva_aereo>
+            <reserva_aereo>
+                <dataPartida>12/11/2013</dataPartida>
+                <dataChegada>12/11/2013</dataChegada>
+                <horaPartida>17:37:00</horaPartida>
+                <horaChegada>18:30:00</horaChegada>
+                <codCia>G3</codCia>
+                <numVoo>3033</numVoo>
+                <origem>CGH</origem>
+                <destino>JOI</destino>
+                <classe>Q</classe>
+                <tarifa>342.69</tarifa>
+                <tarifaChd>281.67</tarifaChd>
+                <taxaNe>38.52</taxaNe>
+                <moeda>R$</moeda>
+                <status>NN</status>
+                <dataQueda>2013-08-17 15:00:00</dataQueda>
+                <dataSys>2013-08-14 14:08:30</dataSys>
+                <localizador>2EGG8T</localizador>
+                <taxa>38.52</taxa>
+                <qtdeadt>1</qtdeadt>
+                <qtdechd>2</qtdechd>
+                <qtdeinf>0</qtdeinf>
+                <numeroQuarto>1</numeroQuarto>
+            </reserva_aereo>
+            <reserva_aereo>
+                <dataPartida>15/11/2013</dataPartida>
+                <dataChegada>15/11/2013</dataChegada>
+                <horaPartida>19:03:00</horaPartida>
+                <horaChegada>19:58:00</horaChegada>
+                <codCia>G3</codCia>
+                <numVoo>3034</numVoo>
+                <origem>JOI</origem>
+                <destino>CGH</destino>
+                <classe>Q</classe>
+                <tarifa>342.69</tarifa>
+                <tarifaChd>281.67</tarifaChd>
+                <taxaNe>38.52</taxaNe>
+                <moeda>R$</moeda>
+                <status>NN</status>
+                <dataQueda>2013-08-17 15:00:00</dataQueda>
+                <dataSys>2013-08-14 14:08:30</dataSys>
+                <localizador>2EGG8T</localizador>
+                <taxa>38.52</taxa>
+                <qtdeadt>1</qtdeadt>
+                <qtdechd>2</qtdechd>
+                <qtdeinf>0</qtdeinf>
+                <numeroQuarto>1</numeroQuarto>
+            </reserva_aereo>
+            <reserva_aereo>
+                <dataPartida>15/11/2013</dataPartida>
+                <dataChegada>15/11/2013</dataChegada>
+                <horaPartida>21:29:00</horaPartida>
+                <horaChegada>22:19:00</horaChegada>
+                <codCia>G3</codCia>
+                <numVoo>3960</numVoo>
+                <origem>CGH</origem>
+                <destino>SDU</destino>
+                <classe>Q</classe>
+                <tarifa>342.69</tarifa>
+                <tarifaChd>281.67</tarifaChd>
+                <taxaNe>38.52</taxaNe>
+                <moeda>R$</moeda>
+                <status>NN</status>
+                <dataQueda>2013-08-17 15:00:00</dataQueda>
+                <dataSys>2013-08-14 14:08:30</dataSys>
+                <localizador>2EGG8T</localizador>
+                <taxa>38.52</taxa>
+                <qtdeadt>1</qtdeadt>
+                <qtdechd>2</qtdechd>
+                <qtdeinf>0</qtdeinf>
+                <numeroQuarto>1</numeroQuarto>
+            </reserva_aereo>
+            <reserva_hotel>
+                <id>22302</id>
+                <localizador>567889</localizador>
+                <codigocidade>JOI</codigocidade>
+                <codigocidadeWS/>
+                <codigohotel>11</codigohotel>
+                <codigohotelWS/>
+                <catapto>TRP</catapto>
+                <tipoapto>LUX</tipoapto>
+                <descapto>LUXO- CHD com 16 como Adulto- CHD com 14 como Adulto</descapto>
+                <datade>2013-11-12</datade>
+                <dataate>2013-11-15</dataate>
+                <vlrtotvenda>695.25</vlrtotvenda>
+                <vlrtaxas/>
+                <vlrextras/>
+                <vlrtotvendaadulto>231.75</vlrtotvendaadulto>
+                <vlrtotvendachd>0.00</vlrtotvendachd>
+                <qtdeadt>1.0</qtdeadt>
+                <qtdechd>2.0</qtdechd>
+                <qtdeinf>0.0</qtdeinf>
+                <classchd1/>
+                <classchd2/>
+                <classchd3/>
+                <classchd4/>
+                <observacao/>
+                <bloqueio/>
+                <codigopacote>90889</codigopacote>
+                <dataconfirmacao>2013-08-14 14:08:30</dataconfirmacao>
+                <codigousuconfirmacao>0</codigousuconfirmacao>
+                <emissao/>
+                <dataemissao>0000-00-00 00:00:00</dataemissao>
+                <codigousuemissao>0</codigousuemissao>
+                <dataprazofornecedor>0000-00-00 00:00:00</dataprazofornecedor>
+                <codigousuprazo>0</codigousuprazo>
+                <dataprazovendedor>0000-00-00 00:00:00</dataprazovendedor>
+                <localizadorfornecedor/>
+                <faturado/>
+                <datafaturamento>0000-00-00</datafaturamento>
+                <numerofatura/>
+                <seriefatura/>
+                <codigooperadora>SAT</codigooperadora>
+                <codigooperadoraWS>SAT</codigooperadoraWS>
+                <vlrfaturado>0.00</vlrfaturado>
+                <moedafaturamento/>
+                <cortesia/>
+                <vlrmulta>0.00</vlrmulta>
+                <moedavenda>R$</moedavenda>
+                <cambiofaturamento>0.00</cambiofaturamento>
+                <percentualtaxas>0.00</percentualtaxas>
+                <servico1>Feriados e Eventos - Pagamento Antecipado</servico1>
+                <servico2>Hospedagem com Café da Manhã</servico2>
+                <servico3>Extras por conta do Cliente</servico3>
+                <servico4/>
+                <servico5/>
+                <servico6/>
+                <servico7/>
+                <servico8/>
+                <touristicserviceid/>
+                <regimepensao>Feriados e Eventos - Pagamento Antecipado</regimepensao>
+                <codigocancelamento/>
+                <politicacancelamento/>
+                <facid/>
+                <tarifaestimada>N</tarifaestimada>
+                <numeroquarto>1.0</numeroquarto>
+                <nomehotel>SLAVIERO SLIM JOINVILLE</nomehotel>
+                <enderecohotel>RUA 7 DE SETEMBRO, 40</enderecohotel>
+                <bairrohotel>CENTRO</bairrohotel>
+                <cephotel>89201200</cephotel>
+                <telefonehotel/>
+                <cidadehotel>JOINVILLE</cidadehotel>
+                <estadohotel/>
+                <paishotel/>
+                <sitehotel/>
+                <latitudehotel/>
+                <longitudehotel/>
+            </reserva_hotel>
+            <reserva_opcional>
+                <localizador>91111</localizador>
+                <datade>2013-11-12</datade>
+                <dataate>2013-11-15</dataate>
+                <vlrtotvenda>63.89</vlrtotvenda>
+                <vlrtotvendaadulto>63.89</vlrtotvendaadulto>
+                <vlrtotvendachd>0.00</vlrtotvendachd>
+                <qtdeadt>1.0</qtdeadt>
+                <qtdechd>2.0</qtdechd>
+                <qtdeinf>0.0</qtdeinf>
+                <classchd1/>
+                <classchd2/>
+                <classchd3/>
+                <classchd4/>
+                <indtransfer/>
+                <confirmacao/>
+                <dataconfirmacao>0000-00-00 00:00:00</dataconfirmacao>
+                <codigousuconfirmacao>0</codigousuconfirmacao>
+                <vlrfaturado>0.00</vlrfaturado>
+                <cortesia/>
+                <moedavenda/>
+                <numeroquarto>1.0</numeroquarto>
+                <codigocidade>JOI</codigocidade>
+                <codigoagencia>123456</codigoagencia>
+                <servico1/>
+                <servico2/>
+                <servico3/>
+                <servico4/>
+                <servico5/>
+                <servico6/>
+                <servico7/>
+                <servico8/>
+                <qtdeDias/>
+                <codigooperadoraWS>SAT</codigooperadoraWS>
+                <codigoopcionalWS/>
+                <localizadorWS/>
+                <tiposervicoWS/>
+            </reserva_opcional>
+        </reserva>
+    </reservas>
+</XML>			

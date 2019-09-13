@@ -2,31 +2,38 @@ require_relative 'processor'
 
 describe Processor do
   describe "process" do
-    subject { described_class.new(xml, schema).process } 
+    subject { described_class.new(xml, schema).process }   
 
-    context "with xml" do
+    context "with real xml" do
       let(:xml) do
-        <<~XML
-        <xml>
-          <name>fernando</name>
-          <age>27</age>
-        </xml>
-        XML
-      end
+        File.open("mgm.xml") { |f| Nokogiri::XML(f) }
+      end      
+
       let(:schema) do
-        {
-          name: { css: "name", modifiers: [:capitalize] },
-          age: { css: "age", modifiers: [:to_i] }
+        {       
+          base_path: "/XML/reservas/reserva",
+          hotel: {
+            matcher: "/reserva_master",
+            fields: {
+              origin: { xpath: "origem" },
+              id: { xpath: "codigoagencia", modifiers: [:to_i] }          
+            }            
+          }
         }
       end
+      
       let(:json) do
         {
-          name: "Fernando",
-          age: 27 
-        }
-      end
+          products: [
+            {              
+              origin: "RIO",
+              id: 78945
+            }
+          ]          
+        }        
+      end            
 
-      it { is_expected.to include(json) }
-    end    
+      it { is_expected.to eq json }
+    end
   end
 end
