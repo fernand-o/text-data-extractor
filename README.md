@@ -3,8 +3,7 @@
 The idea is to define a schema that extracts and format data from a xml file.
 
 e.g.
-```
-[Ruby]
+```Ruby
 context "with example xml" do
   subject { Process.new(xml, schema).process }
   
