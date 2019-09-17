@@ -1,16 +1,16 @@
 require 'nokogiri'
 
-class Processor  
+class Processor
   def initialize(xml, schema)
     @xml = xml
     @schema = schema
     @base_path = schema[:base_path]
-  end  
+  end
 
-  def process    
+  def process
     {
-      products: [ hotels ].flatten.compact
-    }            
+      products: [hotels].flatten.compact
+    }
   end
 
   private
@@ -20,27 +20,32 @@ class Processor
   def hotels
     return unless schema[:hotel]
 
-    matcher = schema[:hotel][:matcher]    
-    size = node(matcher).size    
-
-    size.times.map do |i|      
-      hotel node(matcher)[0]
-    end    
+    loop_matcher(xml.xpath(base_path), schema[:hotel])
   end
 
-  def hotel(raw)      
-    fields = schema[:hotel][:fields]    
-    {}.tap do |hash|      
+  def node_value(node, props)
+    return apply_modifiers(node.text, props[:modifiers]) unless props[:matcher]
+
+    loop_matcher(node, props)
+  end
+
+  def fields_value(node, fields)
+    {}.tap do |hash|
       fields.each do |field_name, props|
-        value = raw.xpath(props[:xpath]).text        
-        hash[field_name] = apply_modifiers(value, props[:modifiers])
-      end    
-    end    
+        inner_node = node.xpath(props[:xpath])
+        hash[field_name] = node_value(inner_node, props)
+      end
+    end
   end
 
-  def node(path)
-    xml.xpath(base_path + path)
-  end    
+  def loop_matcher(node, props)
+    matcher = props[:matcher]
+    size = node.xpath(matcher).size
+
+    size.times.map do |index|
+      fields_value(node.xpath(matcher)[index], props[:fields])
+    end
+  end
 
   def apply_modifiers(value, modifiers)
     return value unless modifiers
