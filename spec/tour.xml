@@ -4,7 +4,7 @@
       <Erro/>
       <Pedido>
         <CodVoucher>987654</CodVoucher>
-        <TipoDoProtudo>SEG</TipoDoProtudo>
+        <TipoDoProduto>SEG</TipoDoProduto>
         <DescricaoProduto>Seguro</DescricaoProduto>
         <CodigoPlano>955</CodigoPlano>
         <NomePlano>MAX Brasil Vip VitalCard</NomePlano>

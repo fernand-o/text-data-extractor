@@ -11,8 +11,8 @@ describe Processor do
 
       let(:schema) do
         {
-          base_path: "/XML/reservas/reserva",
-          hotel: {
+          matcher: "/XML/reservas/reserva",
+          fields: {
             matcher: "reserva_master",
             fields: {
               origin: { xpath: "origem" },
@@ -43,18 +43,21 @@ describe Processor do
 
       let(:schema) do
         {
-          base_path: "/ConsultaPedidosPeriodoV2Response/ConsultaPedidosPeriodoV2Result/Pedidos",
-          hotel: {
+          matcher: "/ConsultaPedidosPeriodoV2Response/ConsultaPedidosPeriodoV2Result/Pedidos",
+          fields: {
             matcher: "Pedido",
             fields: {
-              loc: { xpath: "CodVoucher" },
+              kind: { xpath: "TipoDoProduto"},
+              document: { xpath: "CodVoucher" },
               status: { xpath: "Status" },
               passengers: {
                 xpath: "Passageiros",
                 matcher: "Passageiro",
                 fields: {
                   name: { xpath: "Nome", modifiers: [:capitalize]},
-                  age: { xpath: "Idade", modifiers: [:to_i]}
+                  age: { xpath: "Idade", modifiers: [:to_i]},
+                  value: { xpath: "Valor/Moeda/Liquido", modifiers: [:to_f] },
+                  tax: { xpath: "Valor/Moeda/Taxas", modifiers: [:to_f] }
                 }
               }
             }
@@ -66,16 +69,21 @@ describe Processor do
         {
           products: [
             {
-              loc: "987654",
+              kind: "SEG" ,
+              document: "987654",
               status: "Processado",
               passengers: [
                 {
                   name: "Harvey spector",
-                  age: 74
+                  age: 74,
+                  value: 27.89,
+                  tax: 0.11
                 },
                 {
                   name: "Michael ross",
-                  age: 72
+                  age: 72,
+                  value: 39.85,
+                  tax: 0.15
                 }
               ]
             }

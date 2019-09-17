@@ -3,11 +3,10 @@
 The idea is to define a schema that extracts and format data from a xml file.
 
 e.g.
-```
-[Ruby]
+```Ruby
 context "with example xml" do
   subject { Process.new(xml, schema).process }
-  
+
   let(:xml) do
     Nokogiri::XML(
       <<~XML
@@ -27,10 +26,10 @@ context "with example xml" do
   let(:json) do
     {
       name: "Fernando",
-      age: 27 
+      age: 27
     }
   end
 
   it { is_expected.to include(json) }
-end  
+end
 ```

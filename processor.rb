@@ -4,12 +4,12 @@ class Processor
   def initialize(xml, schema)
     @xml = xml
     @schema = schema
-    @base_path = schema[:base_path]
+    @base_path = schema[:matcher]
   end
 
   def process
     {
-      products: [hotels].flatten.compact
+      products: [products].flatten.compact
     }
   end
 
@@ -17,16 +17,14 @@ class Processor
 
   attr_reader :xml, :schema, :base_path
 
-  def hotels
-    return unless schema[:hotel]
-
-    loop_matcher(xml.xpath(base_path), schema[:hotel])
+  def products
+    loop_matcher(xml.xpath(base_path), schema[:fields])
   end
 
   def node_value(node, props)
-    return apply_modifiers(node.text, props[:modifiers]) unless props[:matcher]
+    return loop_matcher(node, props) if props[:matcher]
 
-    loop_matcher(node, props)
+    formatted_value(node.text, props[:modifiers])
   end
 
   def fields_value(node, fields)
@@ -47,7 +45,7 @@ class Processor
     end
   end
 
-  def apply_modifiers(value, modifiers)
+  def formatted_value(value, modifiers)
     return value unless modifiers
 
     modifiers.inject(value){ |final, m| final.send(m) }
