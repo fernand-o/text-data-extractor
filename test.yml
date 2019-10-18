@@ -1,0 +1,15 @@
+Sales:
+  LoopWith: "product_list"
+    Document:
+      Path: "id"
+      Modifier: "to_i"
+    Date:
+      Path: "date"
+    Products:
+      LoopWith: "produtos"
+        Description:
+          Path: "descricao"
+        Kind:
+          Path: "type"
+
+

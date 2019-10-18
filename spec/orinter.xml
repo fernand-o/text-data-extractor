@@ -1,0 +1,234 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns2:consultaCaixaResponse xmlns:ns2="http://v1.ws.infotravel.com.br/">
+         <consultaCaixaRS>
+            <reservaList>
+               <reserva>
+                  <reservaStatus>CONFIRMADO</reservaStatus>
+                  <contato>
+                     <id>5549</id>
+                     <nmCompleto>CHARLES WIDMORE</nmCompleto>
+                     <nmEmail>charles@gmail.com.br</nmEmail>
+                     <telefone>
+                        <nrTelefone>56141</nrTelefone>
+                        <telefoneTipo>COMERCIAL</telefoneTipo>
+                     </telefone>
+                  </contato>
+                  <id>164270</id>
+                  <reservaServicoList>
+                     <reservaServicoList>
+                        <id>1161114</id>
+                        <servico xsi:type="ns2:Outros" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                           <servicoTipo>PASSEIO</servicoTipo>
+                           <cdServico>1046</cdServico>
+                           <nmServico>Passeio a  Cânion Itaimbézinho - REGULAR</nmServico>
+                           <dsServico><![CDATA[<div style="font-weight: normal; font-family: Arial, Verdana; font-size: 10pt; text-align: justify;"><span style="font-family: Verdana; color: rgb(255, 0, 0); font-weight: bold;">Frequência: 4ª feiras, 6ª feiras &amp; Domingos</span></div><div style="font-weight: normal; font-family: Arial, Verdana; font-size: 10pt; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><div style="text-align: justify;"><span style="font-family: Verdana; font-weight: bold; color: rgb(255, 0, 0);">*As datas dos passeios regulares poderão ser alteradas de acordo com a programação elaborada pelo receptivo local na chegada a cidade, terá garantia de datas apenas serviços privativos.</span></div><div style="font-weight: normal; font-family: Arial, Verdana; font-size: 10pt; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><div style="font-weight: normal; font-family: Verdana; font-size: 10pt; text-align: justify;">No Tour Itaimbezinho você vai conhecer o maior cânion da América Latina, localizado no Parque Nacional dos Aparados da Serra, na cidade de Cambará do Sul. No belo cenário, que foi utilizado para as filmagens da minissérie “Casa das Sete Mulheres”, você vai presenciar o belo derrame basáltico milenar, com aproximadamente 700 metros de profundidade e seis quilômetros de extensão.&nbsp;<br></div><div style="font-weight: normal; font-family: Arial, Verdana; font-size: 10pt; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><span style="font-weight: normal; font-family: Verdana; font-size: 10pt;"><div style="text-align: justify;"><span style="font-weight: bold;">Inclui: </span>transporte de ida e volta, guia falando português e passeio no Cânion Itambézinho;</div></span><span style="font-weight: normal; font-family: Verdana; font-size: 10pt;"><div style="text-align: justify;"><span style="font-weight: bold;">Não inclui:</span> Entrada ao Cânion Itambézinho, alimentos e bebidas;</div></span><span style="font-weight: normal; font-family: Verdana; font-size: 10pt;"><div style="text-align: justify;"><span style="font-weight: bold;">Duração:</span> aproximadamente 09h&nbsp;</div></span><div style="font-weight: normal; font-family: Arial, Verdana; font-size: 10pt;"><div style=""><div style="font-weight: normal; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><span style="font-family: Verdana;"><div style="text-align: justify;"><b>Observação:</b> o passeio está sujeito as condições climáticas.</div></span></div></div>]]></dsServico>
+                           <dtServico>20190927</dtServico>
+                           <fornecedor>
+                              <id>196</id>
+                              <nmFornecedor>Oceanic Airlines</nmFornecedor>
+                              <idExterno/>
+                              <endereco xsi:nil="true"/>
+                              <telefone xsi:nil="true"/>
+                              <nmEmail xsi:nil="true"/>
+                           </fornecedor>
+                           <reservaNomeList>
+                              <reservaNome id="1089724" nmNome="JACK" nmSobrenome="SHERPHARD" sexo="MASCULINO" paxTipo="ADT" qtIdade="35" sqNome="1089724">
+                                 <dtNascimento>19801026</dtNascimento>
+                                 <documento>
+                                    <documentoTipo>CPF</documentoTipo>
+                                    <nrDocumento>123.456.789-10</nrDocumento>
+                                 </documento>
+                              </reservaNome>
+                              <reservaNome id="1089725" nmNome="KATE" nmSobrenome="AUSTEN" sexo="FEMININO" paxTipo="ADT" qtIdade="33" sqNome="1089725">
+                                 <dtNascimento>19820423</dtNascimento>
+                              </reservaNome>
+                           </reservaNomeList>
+                           <tarifa>
+                              <dsTarifa/>
+                              <vlTotal>338.67</vlTotal>
+                              <sgMoeda>BRL</sgMoeda>
+                              <sgSimbolo>R$</sgSimbolo>
+                              <vlCambio>1.0</vlCambio>
+                              <vlPagamento>338.67</vlPagamento>
+                              <vlComissao>40.64</vlComissao>
+                              <dtVencimento>20190927</dtVencimento>
+                              <tipo>FATURADO</tipo>
+                           </tarifa>
+                           <stUnico>false</stUnico>
+                           <stDisponivel>true</stDisponivel>
+                        </servico>
+                        <reservaStatus>CONFIRMADO</reservaStatus>
+                     </reservaServicoList>
+                     <reservaServicoList>
+                        <id>1161115</id>
+                        <servico xsi:type="ns2:Outros" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                           <servicoTipo>PASSEIO</servicoTipo>
+                           <cdServico>1035</cdServico>
+                           <nmServico>Passeio Gran Reservas - REGULAR</nmServico>
+                           <dsServico><![CDATA[<div style="font-size: 10pt; font-family: Arial, Verdana; font-weight: normal; text-align: justify;"><b style="color: rgb(255, 0, 0); font-family: Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">Frequência: 3ª feiras e </b><font color="#ff0000" face="Verdana"><span style="font-size: 13.3333px;"><b>sábados</b></span></font><b style="color: rgb(255, 0, 0); font-family: Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">&nbsp;</b></div><div style="font-size: 10pt; font-family: Arial, Verdana; font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="color: rgb(255, 0, 0); font-family: Verdana;"><b style=""><br></b></span></div><div style="font-size: 10pt; font-family: Arial, Verdana; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="font-family: Verdana; font-weight: bold; color: rgb(255, 0, 0);">*As datas dos passeios regulares poderão ser alteradas de acordo com a programação elaborada pelo receptivo local na chegada a cidade, terá garantia de datas apenas serviços privativos.</span></div><div style="font-size: 10pt; font-family: Arial, Verdana; font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="color: rgb(255, 0, 0); font-family: Verdana;"><b style=""><br></b></span></div><div style="font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Inclui:</span> transporte de ida e volta,&nbsp;Mini Curso de Vinhos na Vinícola Miolo e taxa de degustação e visita na vinícola Zanrossoe guia falando português&nbsp;</span></div><div style="font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Não inclui: </span>Entradas, almoço, taxa de visitação e degustação;<br><span style="font-weight: bold;">Duração:</span> aproximadamente 10h<br></span></div><div style="font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><div style="font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><span style="font-family: Verdana;">Este tour foi planejado para quem aprecia bons Vinhos. Este passeio percorre o Vale dos Vinhedos, uma região vitivinícola de colonização italiana com belas paisagens e mais de um século de tradição na produção de vinhos.<br>Na Vinícola Miolo a paixão pelo fascinante mundo do vinho é explicada pela história da família Miolo que, além de trabalhar na vitivinicultura desde a chegada de Giuseppe no Brasil, em 1897, inova ano após ano. Uma das fundadoras do projeto Wines of Brasil, a Miolo Wine Group é a maior exportadora de vinhos do Brasil e a mais reconhecida no mercado internacional. A produção das quatro vinícolas do grupo soma, em média, 10 milhões de litros por ano e é cultivada em uma área de vinhedos próprios com aproximadamente 1.000 hectares. É neste local que participaremos de um Mini Curso de Vinhos e faremos a degustação de cinco vinhos emblemáticos do Grupo Miolo.<br>O roteiro segue pela Valbrenta, também localizada no Vale dos Vinhedos, uma pequena queijaria onde é possível degustar os melhores queijos do Brasil, produzidos de forma artesanal e com o carinho de uma família que traz na sua história o respeito ao alimento e a escolha pela qualidade.<br>O tour faz sua última parada na Vinhos Zanrosso, uma vinícola familiar, colonial, localizada em Caxias do Sul, onde o visitante é recebido de forma calorosa pelos proprietários. Eles contam sua história, que revela mais de 80 anos dedicados à arte de cultivar uvas e fazer vinhos, além de apresentar a produção e oferecer uma degustação de seus produtos.</span></div><div style="font-size: 10pt; font-family: Arial, Verdana; font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: justify;"><br></div><span style="font-size: 10pt; font-family: Verdana; font-weight: normal; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;"><div style="text-align: justify;"><b style="font-size: 10pt;">Observação:</b><span style="font-size: 10pt;"> o passeio está sujeito as condições climáticas.</span></div></span>]]></dsServico>
+                           <dtServico>20190928</dtServico>
+                           <fornecedor>
+                              <id>196</id>
+                              <nmFornecedor>Brocker Turismo</nmFornecedor>
+                              <idExterno/>
+                              <endereco xsi:nil="true"/>
+                              <telefone xsi:nil="true"/>
+                              <nmEmail xsi:nil="true"/>
+                           </fornecedor>
+                           <reservaNomeList>
+                              <reservaNome id="1089726" nmNome="HUGO" nmSobrenome="REYES" sexo="MASCULINO" paxTipo="ADT" qtIdade="32" sqNome="1089726">
+                                 <dtNascimento>19861026</dtNascimento>
+                                 <documento>
+                                    <documentoTipo>CPF</documentoTipo>
+                                    <nrDocumento>111.222.333-44</nrDocumento>
+                                 </documento>
+                              </reservaNome>
+                              <reservaNome id="1089727" nmNome="SAYID" nmSobrenome="JARRAH" sexo="MASCULINO" paxTipo="ADT" qtIdade="36" sqNome="1089727">
+                                 <dtNascimento>19800423</dtNascimento>
+                              </reservaNome>
+                           </reservaNomeList>
+                           <tarifa>
+                              <dsTarifa/>
+                              <vlTotal>397.33</vlTotal>
+                              <sgMoeda>BRL</sgMoeda>
+                              <sgSimbolo>R$</sgSimbolo>
+                              <vlCambio>1.0</vlCambio>
+                              <vlPagamento>397.33</vlPagamento>
+                              <vlComissao>47.68</vlComissao>
+                              <dtVencimento>20190930</dtVencimento>
+                              <tipo>FATURADO</tipo>
+                           </tarifa>
+                           <stUnico>false</stUnico>
+                           <stDisponivel>true</stDisponivel>
+                        </servico>
+                        <reservaStatus>CONFIRMADO</reservaStatus>
+                     </reservaServicoList>
+                     <reservaServicoList>
+                        <id>1162380</id>
+                        <servico xsi:type="ns2:Outros" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                           <servicoTipo>PACOTE_SERVICOS</servicoTipo>
+                           <cdServico>188</cdServico>
+                           <nmServico>Traslado Aeroporto de Porto Alegre / Hotel Gramado OU Canela / Aeroporto de Porto Alegre + Passeios - REGULAR</nmServico>
+                           <dsServico><![CDATA[<div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana; color: rgb(255, 0, 0);"><b>*** Mínimo de 03 noites de hospedagem na localidade***</b></span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><b>Inclui:</b> Traslados + Passeio a Nova Petrópolis e Compras&nbsp;+ Ticket Bustour&nbsp;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana; color: rgb(255, 0, 0);"><span style="font-weight: bold;">Traslado Aeroporto de Porto Alegre / Hotel Gramado OU Canela / Aeroporto de Porto Alegre</span>&nbsp;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Idioma do Motorista: Português</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Permitido 01 (uma) mala por pessoa&nbsp;</span></div><div style="font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Observação:</span> No traslado de chegada a espera no Aeroporto pode ser de até 1 hora, em função do tempo de chegada entre um voo e outro. O traslado de saída é marcado aproximadamente 5 horas antes do horário de saída do voo.</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana; font-weight: bold;"><br></span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana; font-weight: bold; color: rgb(255, 0, 0);">Passeio a Nova Petrópolis&nbsp;e Compras</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Este passeio é especial para quem quer conhecer toda a cultura alemã impressa na arquitetura e tradição da cidade de Nova Petrópolis. A história dos imigrantes alemães é recontada através do Parque Esculturas Pedras do Silêncio. Na Linha Imperial (panorâmico) contemplaremos a arquitetura do local, que foi o berço do cooperativismo rural e do desenvolvimento econômico de Nova Petrópolis. Visitaremos também a Aldeia do Imigrante, onde poderemos ver o resgate de toda a história da chegada dos imigrantes alemães, o Labirinto Verde e a Praça das Flores. E ainda conheceremos lojas de produtos típicos da região, como queijos e vinhos, malhas, couros e o Chocolate Lugano.</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Inclui:</span> transporte de ida e volta e guia falando português;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Não inclui: </span>Entradas, alimentos e bebidas;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Duração:</span> aproximadamente 09h</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Frequência: </span>2ª feiras, 5ª feiras &amp; Sábados</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><br></span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana; font-weight: bold; color: rgb(255, 0, 0);">Ticket de Bustour para 01 Dia</span></div><div style="font-weight: normal; text-align: justify;"><span style="font-family: Verdana;">Com inspiração nos ônibus turísticos europeus, o projeto Bustour, da Brocker Turismo, traz para a região uma nova experiência para o turismo. A bordo do Bustour você irá conhecer os principais atrativos turísticos das cidades de Canela e Gramado. Além de ter uma belíssima visão panorâmica do alto do ônibus de dois andares, utilizando o Bustour você tem a opção de transporte para mais de 30 pontos de parada, que reúnem os principais atrativos das duas cidades, podendo subir e descer quantas vezes quiser, de acordo com os horários disponíveis, deixando o passeio com o seu jeito. O cliente Bustour também pode visitar os pontos turísticos das rotas com ótimos descontos e  vantagens, além de receber informações culturais e históricas por áudio em Português, Inglês e Espanhol.</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><br></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Inclui:</span> Ingresso (ticket) BusTour Válido para 01 (um) Dia;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Não inclui:</span> Transporte de ida e volta, entradas, alimentos e bebidas;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Horário de Início:</span> 08h15&nbsp;Horário de Término: 18h30</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Frequência:</span> Diária</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;"><span style="font-weight: bold;">Observações:</span> Algumas atrações oferecem desconto no valor da entrada;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Leve sempre um casaco a mais durante o passeio, a brisa é fresquinha no andar superior;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Necessária a apresentação de documento que comprove a idade no momento do embarque;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">O passageiro poderá realizar a troca do voucher pelo Ticket (ingresso) direto no ônibus ou nas lojas da Empresa Brocker Turismo de Canela ou Gramado;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">O passageiro poderá embarcar no ônibus em qualquer um dos pontos de parada de sua preferência, basta apresentar o ticket (ingresso) ao monitor;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">A compra do Ticket (Ingresso) deve ser feita para o dia da realização do passeio no BusTour. A partir do momento da troca do voucher pelo ticket há um prazo máximo de 08 dias para a utilização, após esse período o ticket (ingresso), perderá a validade;</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Poderão haver atrasos e alterações nos horários, sem aviso prévio, devido às condições de tráfego.</span></div><div style="font-weight: normal; font-size: 10pt; font-family: Arial, Verdana; text-align: justify;"><span style="font-family: Verdana;">Os passeios poderão sofrer alterações no roteiro ou cancelamento devido as condições climáticas ou fatores de força maior que impeçam aquela atividade.</span></div>]]></dsServico>
+                           <dtServico>20190926</dtServico>
+                           <fornecedor>
+                              <id>196</id>
+                              <nmFornecedor>Brocker Turismo</nmFornecedor>
+                              <idExterno/>
+                              <endereco xsi:nil="true"/>
+                              <telefone xsi:nil="true"/>
+                              <nmEmail xsi:nil="true"/>
+                           </fornecedor>
+                           <reservaNomeList>
+                              <reservaNome id="1091122" nmNome="JOHN" nmSobrenome="LOCKE" sexo="MASCULINO" paxTipo="ADT" qtIdade="45" sqNome="1091122">
+                                 <dtNascimento>19751026</dtNascimento>
+                                 <documento>
+                                    <documentoTipo>CPF</documentoTipo>
+                                    <nrDocumento>999.888.111-00</nrDocumento>
+                                 </documento>
+                              </reservaNome>
+                              <reservaNome id="1091123" nmNome="JAMES" nmSobrenome="FORD" sexo="MASCULINO" paxTipo="ADT" qtIdade="37" sqNome="1091123">
+                                 <dtNascimento>19790423</dtNascimento>
+                              </reservaNome>
+                           </reservaNomeList>
+                           <tarifa>
+                              <dsTarifa/>
+                              <vlTotal>730.67</vlTotal>
+                              <sgMoeda>BRL</sgMoeda>
+                              <sgSimbolo>R$</sgSimbolo>
+                              <vlCambio>1.0</vlCambio>
+                              <vlPagamento>730.67</vlPagamento>
+                              <vlComissao>87.68</vlComissao>
+                              <dtVencimento>20190926</dtVencimento>
+                              <tipo>FATURADO</tipo>
+                           </tarifa>
+                           <stUnico>false</stUnico>
+                           <stDisponivel>true</stDisponivel>
+                        </servico>
+                        <reservaStatus>CONFIRMADO</reservaStatus>
+                     </reservaServicoList>
+                  </reservaServicoList>
+                  <pagto>
+                     <pagtoFormaList>
+                        <pagtoForma xsi:type="ns2:PagtoDinheiro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                           <cliente>
+                              <id>5549</id>
+                              <nmCompleto>DHARMA INITIATIVE</nmCompleto>
+                              <nmEmail>contact@dharma.com</nmEmail>
+                              <telefone>
+                                 <nrDDD>11</nrDDD>
+                                 <nrTelefone>30053329</nrTelefone>
+                                 <telefoneTipo>COMERCIAL</telefoneTipo>
+                              </telefone>
+                              <endereco nrLatitude="-23.5564762" nrLongitude="-46.5461484">
+                                 <dsEndereco>Rua dos Alfeneiros</dsEndereco>
+                                 <nrEndereco>125</nrEndereco>
+                                 <nmComplemento/>
+                                 <nrCep>89900000</nrCep>
+                                 <municipio>
+                                    <id>23500</id>
+                                    <nmMunicipio>SÃO PAULO</nmMunicipio>
+                                    <sgEstado>SP</sgEstado>
+                                    <sgPais>BR</sgPais>
+                                    <nmPais>BRASIL</nmPais>
+                                 </municipio>
+                                 <nmBairro>Jardins</nmBairro>
+                              </endereco>
+                              <documento>
+                                 <documentoTipo>CNPJ</documentoTipo>
+                                 <nrDocumento>0241395700130</nrDocumento>
+                              </documento>
+                              <sexo>MASCULINO</sexo>
+                           </cliente>
+                           <vlPagto>1466.67</vlPagto>
+                           <sgMoeda>BRL</sgMoeda>
+                           <dtInclusao>20190924</dtInclusao>
+                        </pagtoForma>
+                     </pagtoFormaList>
+                     <pagtoStatus>PAGO</pagtoStatus>
+                  </pagto>
+                  <dsUrlVoucher>https://nope</dsUrlVoucher>
+                  <promotor>
+                     <id>4913</id>
+                     <nmPessoa>OUTRA PESSOA</nmPessoa>
+                     <endereco nrLatitude="-23.5531221" nrLongitude="-46.5999568">
+                        <dsEndereco>Rua da Lua</dsEndereco>
+                        <nrEndereco>001</nrEndereco>
+                        <nmComplemento/>
+                        <nrCep>03168005</nrCep>
+                        <municipio>
+                           <id>23500</id>
+                           <nmMunicipio>SÃO PAULO</nmMunicipio>
+                           <sgEstado>SP</sgEstado>
+                           <sgPais>BR</sgPais>
+                           <nmPais>BRASIL</nmPais>
+                        </municipio>
+                        <nmBairro>Mooca</nmBairro>
+                     </endereco>
+                     <telefone>
+                        <nrDDD/>
+                        <nrTelefone/>
+                        <telefoneTipo>RESIDENCIAL</telefoneTipo>
+                     </telefone>
+                     <nmEmail>asd@gmail.com</nmEmail>
+                  </promotor>
+                  <atendente>
+                     <id>4127</id>
+                     <nmPessoa>ATENDENTE</nmPessoa>
+                     <nmEmail>atendente@empresa.com.br</nmEmail>
+                  </atendente>
+                  <usuario>
+                     <id>6924</id>
+                     <nmPessoa>USUARIO</nmPessoa>
+                     <nmEmail>usuario@empresa.com</nmEmail>
+                  </usuario>
+                  <negocioTipo>B2B</negocioTipo>
+                  <vlComissaoRetida>0.0</vlComissaoRetida>
+                  <dtInclusao>20190920 12:38</dtInclusao>
+               </reserva>
+            </reservaList>
+         </consultaCaixaRS>
+      </ns2:consultaCaixaResponse>
+   </soap:Body>
+</soap:Envelope>
