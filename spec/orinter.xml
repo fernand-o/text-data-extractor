@@ -33,7 +33,7 @@
                               <nmEmail xsi:nil="true"/>
                            </fornecedor>
                            <reservaNomeList>
-                              <reservaNome id="1089724" nmNome="JACK" nmSobrenome="SHERPHARD" sexo="MASCULINO" paxTipo="ADT" qtIdade="35" sqNome="1089724">
+                              <reservaNome id="1089724" nmNome="JACK" nmSobrenome="SHEPHARD" sexo="MASCULINO" paxTipo="ADT" qtIdade="35" sqNome="1089724">
                                  <dtNascimento>19801026</dtNascimento>
                                  <documento>
                                     <documentoTipo>CPF</documentoTipo>

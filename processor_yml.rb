@@ -1,8 +1,11 @@
 require 'nokogiri'
 require 'psych'
 require 'pry'
+require_relative 'modifiers'
 
 class ProcessorYml
+  include Modifiers
+
   def initialize(xml, schema)
     @xml = xml
     @schema = schema
@@ -16,16 +19,34 @@ class ProcessorYml
 
   attr_reader :xml, :schema
 
+  def node_raw_value(node)
+    node ? node.text : ""
+  end
+
+  def tag_value(path)
+    node_raw_value xml.css(path)
+  end
+
+  def attr_value(path, att)
+    node_raw_value xml.css(path).attribute(att)
+  end
+
   def node_value(props, base_path)
     return loop_with(props, base_path) if props["loop_with"]
 
     if props["path"]
-      node = xml.css(base_path + " > " + props["path"])
+      value = tag_value "#{base_path} > #{props["path"]}"
     else
-      node = xml.css(base_path).attribute(props["attr"])
+      att = props["attr"]
+
+      if att.is_a? Array
+        value = props["attr"].map { |atr| attr_value base_path, atr }
+      else
+        value = attr_value base_path, att
+      end
     end
 
-    formatted_value(node, props["modifiers"])
+    formatted_value(value, props["modifiers"])
   end
 
   def hash_node(props, base_path = "")
@@ -46,10 +67,11 @@ class ProcessorYml
     end
   end
 
-  def formatted_value(node, modifiers)
-    return "" unless node
-    return node.text unless modifiers
+  def formatted_value(value, modifiers)
+    return value unless modifiers
 
-    modifiers.inject(node.text){ |final, m| final.send(m) }
+    modifiers.inject(value) do |formatted, modifier|
+      formatted.respond_to?(modifier) ? formatted.send(modifier) : send(modifier, formatted)
+    end
   end
 end

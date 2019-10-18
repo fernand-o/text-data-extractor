@@ -30,7 +30,8 @@ describe ProcessorYml do
                 passengers:
                   loop_with: servico > reservaNomeList > reservaNome
                   name:
-                    attr: nmNome
+                    attr: [nmNome, nmSobrenome]
+                    modifiers: [capitalize_and_join]
           YAML
         )
       end
@@ -48,10 +49,10 @@ describe ProcessorYml do
                   kind: "PASSEIO",
                   passengers: [
                     {
-                      name: "JACK"
+                      name: "Jack Shephard"
                     },
                     {
-                      name: "KATE"
+                      name: "Kate Austen"
                     }
                   ]
                 },
@@ -61,10 +62,10 @@ describe ProcessorYml do
                   kind: "PASSEIO",
                   passengers: [
                     {
-                      name: "HUGO"
+                      name: "Hugo Reyes"
                     },
                     {
-                      name: "SAYID"
+                      name: "Sayid Jarrah"
                     }
                   ]
                 },
@@ -74,10 +75,10 @@ describe ProcessorYml do
                   kind: "PACOTE_SERVICOS",
                   passengers: [
                     {
-                      name: "JOHN"
+                      name: "John Locke"
                     },
                     {
-                      name: "JAMES"
+                      name: "James Ford"
                     }
                   ]
                 }
